@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8244" started-at="2017-07-11T12:14:00Z" finished-at="2017-07-11T12:14:09Z">
+  <suite name="Default suite" duration-ms="8288" started-at="2017-07-11T12:47:55Z" finished-at="2017-07-11T12:48:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8244" started-at="2017-07-11T12:14:00Z" finished-at="2017-07-11T12:14:09Z">
+    <test name="Default test" duration-ms="8288" started-at="2017-07-11T12:47:55Z" finished-at="2017-07-11T12:48:03Z">
       <class name="uptake.tests.MainUptakeTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:uptake.tests.MainUptakeTest@c038203]" name="initialize" is-config="true" duration-ms="7997" started-at="2017-07-11T07:14:01Z" finished-at="2017-07-11T07:14:09Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:uptake.tests.MainUptakeTest@c038203]" name="initialize" is-config="true" duration-ms="8088" started-at="2017-07-11T07:47:55Z" finished-at="2017-07-11T07:48:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="PagelaunchTest()[pri:1, instance:uptake.tests.MainUptakeTest@c038203]" name="PagelaunchTest" duration-ms="23" started-at="2017-07-11T07:14:09Z" finished-at="2017-07-11T07:14:09Z">
+        <test-method status="PASS" signature="PagelaunchTest()[pri:1, instance:uptake.tests.MainUptakeTest@c038203]" name="PagelaunchTest" duration-ms="25" started-at="2017-07-11T07:48:03Z" finished-at="2017-07-11T07:48:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PagelaunchTest -->
-        <test-method status="PASS" signature="PageLinkTest()[pri:2, instance:uptake.tests.MainUptakeTest@c038203]" name="PageLinkTest" duration-ms="184" started-at="2017-07-11T07:14:09Z" finished-at="2017-07-11T07:14:09Z">
+        <test-method status="PASS" signature="PageLinkTest()[pri:2, instance:uptake.tests.MainUptakeTest@c038203]" name="PageLinkTest" duration-ms="141" started-at="2017-07-11T07:48:03Z" finished-at="2017-07-11T07:48:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageLinkTest -->

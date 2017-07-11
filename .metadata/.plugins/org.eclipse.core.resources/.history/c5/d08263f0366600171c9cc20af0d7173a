@@ -4,7 +4,6 @@ import java.util.List;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import uptake.pageobjects.HomePage;
 
 public class Driver {
 	
@@ -47,10 +46,8 @@ public class Driver {
 		
 	}
 	public void navigateToURL(){
-		//WebElement link = driver.findElement(By.xpath("//a[contains(text(),'Approach')]"));
-		
-		//link.click();
-		HomePage.link_Approach(driver).click();
+		WebElement link = driver.findElement(By.xpath("//a[contains(text(),'Approach')]"));
+		link.click();
 		
 	}
 

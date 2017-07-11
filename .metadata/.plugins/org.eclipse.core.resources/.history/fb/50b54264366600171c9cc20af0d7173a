@@ -1,0 +1,5 @@
+package uptake.pageobjects;
+
+public class HomePage {
+
+}
