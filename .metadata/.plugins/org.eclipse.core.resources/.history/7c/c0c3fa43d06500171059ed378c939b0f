@@ -1,0 +1,20 @@
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class MainUptake {
+	
+	public void go(){
+		WebDriver driver = new FirefoxDriver();
+		driver.get("Google.com");
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MainUptake mu = new MainUptake();
+		my.go();
+
+	}
+
+}

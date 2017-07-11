@@ -1,0 +1,23 @@
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class MainUptake {
+	
+	public void go(){
+		WebDriver driver = new FirefoxDriver();
+		driver.get("Google.com");
+		driver.manage().window().maximize();
+		String str = driver.getCurrentUrl();
+		System.out.println("The current URL is " + str);
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MainUptake mu = new MainUptake();
+		mu.go();
+
+	}
+
+}

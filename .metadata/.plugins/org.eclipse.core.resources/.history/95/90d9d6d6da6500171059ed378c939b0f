@@ -1,0 +1,16 @@
+package uptake.tests;
+
+
+import org.testng.annotations.Test;
+
+import uptake.automation.*;
+
+public class MainUptakeTest {
+	
+	@Test
+	public void DriverTest(){
+		Driver mu = new Driver();
+		mu.go();
+		
+	}
+}

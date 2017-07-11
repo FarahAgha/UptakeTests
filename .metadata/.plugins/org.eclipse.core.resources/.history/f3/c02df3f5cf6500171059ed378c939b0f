@@ -1,0 +1,14 @@
+import openQA.*;
+
+public class MainUptake {
+	
+	public void go(){
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

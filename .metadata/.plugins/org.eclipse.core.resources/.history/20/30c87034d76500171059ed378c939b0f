@@ -1,0 +1,45 @@
+package uptake.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class MainUptakeTest {
+	
+	@Test
+	public void GoTest(){
+		
+	}
+	
+	@Parameters("Browser")
+	public  void test1(String browser) {
+	 
+		if(browser.equalsIgnoreCase("Firefox")){
+		 
+		WebDriver driver=new FirefoxDriver();
+		 
+		driver.manage().window().maximize();
+		 
+		driver.get("http://www.google.com");
+		 
+		driver.quit();
+	 
+		}
+		else if(browser.equalsIgnoreCase("IE")){
+			
+			String path = "C:\\Users\\Deltaman\\Documents\\Uptake\\Resources\\IEDriverServer_Win32_3.4.0";
+		 
+		System.setProperty("webdriver.ie.driver", (path+"IEDriverServer.exe"));
+		 
+		WebDriver driver=new InternetExplorerDriver();
+		 
+		driver.manage().window().maximize();
+		 
+		driver.get("http://www.google.com");
+		 
+		driver.quit();
+		}
+	}
+}

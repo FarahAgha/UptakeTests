@@ -1,0 +1,21 @@
+package uptake.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import uptake.automation.*;
+
+public class MainUptakeTest {
+	
+	@Test
+	public void GoTest(){
+		MainUptake mu = new MainUptake();
+		mu.go();
+		
+	}
+	
+	
+}

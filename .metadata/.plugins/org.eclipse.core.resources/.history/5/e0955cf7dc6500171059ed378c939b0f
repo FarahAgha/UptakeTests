@@ -1,0 +1,21 @@
+package uptake.tests;
+
+
+
+import static org.testng.Assert.assertEquals;
+
+import org.testng.annotations.Test;
+
+import uptake.automation.*;
+
+public class MainUptakeTest {
+	
+	@Test
+	public void PagelaunchTest(){
+		Driver mu = new Driver();
+		mu.init();
+		mu.go();
+		assertEquals("https://www.uptake.com/",	mu.GetUrlLink());
+		
+	}
+}
