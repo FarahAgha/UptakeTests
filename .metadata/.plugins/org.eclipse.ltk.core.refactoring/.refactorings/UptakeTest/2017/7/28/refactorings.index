@@ -1,9 +1,0 @@
-1499736583152	Move compilation unit
-1499737069673	Rename type 'MainUptake'
-1499738157570	Extract method 'GetUrlLink'
-1499739330216	Rename local variable 'mu'
-1499740747346	Rename method 'GetUrlLink'
-1499740771481	Rename method 'getLink'
-1499773668296	Rename method 'link'
-1499773723364	Rename method 'navigateToApprachURL'
-1499773764456	Rename method 'navigateToApproachURL'

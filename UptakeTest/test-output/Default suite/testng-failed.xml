@@ -5,8 +5,9 @@
     <classes>
       <class name="uptake.tests.MainUptakeTest">
         <methods>
+          <include name="cleanUpTest"/>
           <include name="initialize"/>
-          <include name="PagelaunchTest"/>
+          <include name="testing"/>
         </methods>
       </class> <!-- uptake.tests.MainUptakeTest -->
     </classes>

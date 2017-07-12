@@ -1,57 +1,41 @@
 package uptake.automation;
-import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import uptake.pageobjects.HomePage;
-
 public class Driver {
 	
-	public static WebDriver driver;
+	//Accessing static instance to use driver for multiple browser
+	public static WebDriver instance;
 	
-	public void init(){
+	
+	public static void initilize(){
+		//initialize browser
+		initializeFireFox();
+		
+		//implicit wait
+		driverWait();
+		
+	}
+	
+	//FireFox Driver setup
+	public static void initializeFireFox() {
+		
+		//setting properties and initializing FireFox
 		String path = "C:\\Users\\Deltaman\\Documents\\Uptake\\Resources\\geckodriver-v0.17.0-win32\\";
 		System.setProperty("webdriver.gecko.driver",(path+"geckodriver.exe"));
-		driver = new FirefoxDriver();
-	}
-	
-	public void go(){ 
-		
-		driver.manage().window().maximize();
-		driver.get("http://www.uptake.com");
-			
+		instance = new FirefoxDriver();
 	}
 
-	public String getUrl() {
-		String str = driver.getCurrentUrl();
-		return str;
+	public static void driverWait() {
+		//To add wait to render the page
+		instance.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
 	}
 	
-	public void allLinks(){
-		List<WebElement> links = driver.findElements(By.tagName("a"));
-		
-		try {
-		for (WebElement myElement : links){
-			String link = myElement.getText();
-			if (link !=""){
-	             myElement.click();
-	             
-					Thread.sleep(2000);
-				} 
-			}
-		}catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-	}
-	public void navigateToURL(){
-		//WebElement link = driver.findElement(By.xpath("//a[contains(text(),'Approach')]"));
-		
-		//link.click();
-		HomePage.link_Approach(driver).click();
-		
+	public static void cleanUp(){
+		//cleanup the instance of the driver 
+		instance.close();
 	}
 
 
